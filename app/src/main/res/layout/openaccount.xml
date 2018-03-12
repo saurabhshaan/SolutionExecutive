@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5EE">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Name"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="0.13"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:hint="email"
+                android:layout_below="@+id/name"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_weight="0.13"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/email"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:inputType="phone"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:hint="mobile number"
+                android:layout_weight="0.13"
+                android:textColor="@color/black" />
+
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.13"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:hint="password"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:id="@+id/openimage"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/ic_launcher"/>
+            <Button
+                android:id="@+id/imagebutton"
+                style="?buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/camera"
+                android:layout_below="@+id/camera"
+                android:background="#00FF7F"
+                android:gravity="center"
+                android:onClick="browseImage"
+                android:text="Browse Image"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FF0000"
+                android:textAlignment="center" />
+            <Button
+                android:id="@+id/submit"
+                style="?buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="Login"
+                android:textColor="#FF0000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:layout_weight="2.53"
+                android:background="#00FF7F"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
